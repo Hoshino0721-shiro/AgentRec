@@ -1,0 +1,162 @@
+{
+  "n_records": 100,
+  "systems": {
+    "llm_full_agent": {
+      "n": 100,
+      "metrics": {
+        "explanation_faithfulness": {
+          "n": 100,
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        },
+        "hard_constraint_satisfaction_rate": {
+          "n": 100,
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        },
+        "hr_at_1": {
+          "n": 100,
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        },
+        "hr_at_3": {
+          "n": 100,
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        },
+        "hr_at_5": {
+          "n": 100,
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        },
+        "mean_latency_ms": {
+          "n": 100,
+          "mean": 28278.500970000005,
+          "ci_low": 26655.41645975,
+          "ci_high": 29923.150119499995
+        },
+        "mean_token_usage": {
+          "n": 100,
+          "mean": 14870.09,
+          "ci_low": 13692.534,
+          "ci_high": 16271.06
+        },
+        "mean_tool_calls": {
+          "n": 100,
+          "mean": 6.83,
+          "ci_low": 6.53,
+          "ci_high": 7.170249999999999
+        },
+        "mean_turns": {
+          "n": 100,
+          "mean": 2.47,
+          "ci_low": 2.34,
+          "ci_high": 2.61
+        },
+        "memory_write_accuracy": {
+          "n": 100,
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        },
+        "ndcg_at_3": {
+          "n": 100,
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        },
+        "ndcg_at_5": {
+          "n": 100,
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        },
+        "profile_contamination_rate": {
+          "n": 100,
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "recall_at_5": {
+          "n": 100,
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        },
+        "recovery_success_rate": {
+          "n": 12,
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        },
+        "redundant_tool_call_rate": {
+          "n": 100,
+          "mean": 0.12645021645021637,
+          "ci_low": 0.11393885281385277,
+          "ci_high": 0.1396753246753245
+        },
+        "stale_memory_misuse_rate": {
+          "n": 100,
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "task_success_rate": {
+          "n": 100,
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        },
+        "useful_clarification_rate": {
+          "n": 35,
+          "mean": 0.37142857142857144,
+          "ci_low": 0.22857142857142856,
+          "ci_high": 0.5428571428571428
+        }
+      },
+      "failure_counts": {
+        "success": 100
+      },
+      "error_count": 0
+    }
+  },
+  "run_id": "agentrec_llm_pilot-22e15e5699fbfdf2-20260826T005917-66c9ac",
+  "stage": "llm_pilot",
+  "config_hash": "22e15e5699fbfdf2",
+  "git_commit": "09facfe",
+  "code_hash": "96b41e0fad6acc13",
+  "controlled": true,
+  "model": "gpt-5.5",
+  "provider": "agentrec_gateway",
+  "base_url": "<redacted-private-gateway>",
+  "provider_pricing_verified": false,
+  "cost_basis": "OpenAI public GPT-5.5 reference estimate; not an AgentRec gateway invoice",
+  "requested_tasks": 100,
+  "saved_records": 100,
+  "stop_reason": "completed",
+  "stop_error": null,
+  "budget_after": {
+    "model": "gpt-5.5",
+    "max_cost_usd": 9.9197125,
+    "charged_or_reserved_usd": 7.8991065,
+    "settled_cost_usd": 7.832594,
+    "remaining_usd": 2.020606,
+    "event_count": 835
+  },
+  "overall_budget_after": {
+    "max_cost_usd": 10.0,
+    "charged_or_reserved_usd": 7.979394,
+    "remaining_usd": 2.020606,
+    "prior_model_charged_or_reserved_usd": 0.0802875,
+    "current_model": "gpt-5.5"
+  },
+  "started_at": "2026-08-25T16:59:17.661418Z",
+  "finished_at": "2026-08-25T17:46:25.915200Z",
+  "raw_run_dir": "results/raw/llm_pilot/agentrec_llm_pilot-22e15e5699fbfdf2-20260826T005917-66c9ac",
+  "trajectories_file": "results/raw/llm_pilot/agentrec_llm_pilot-22e15e5699fbfdf2-20260826T005917-66c9ac/trajectories.jsonl"
+}

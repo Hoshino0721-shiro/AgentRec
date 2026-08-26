@@ -1,0 +1,46 @@
+{
+  "passed": true,
+  "checks": {
+    "closed_loop": true,
+    "action_diversity": true,
+    "tools_used": true,
+    "memory_used": true,
+    "mechanism_signal": true
+  },
+  "action_types": [
+    "compare_products",
+    "filter_constraints",
+    "finish",
+    "observe_request",
+    "plan",
+    "rank_candidates",
+    "receive_feedback",
+    "recommend",
+    "retrieve_preferences",
+    "review_summary",
+    "search_products",
+    "update_memory"
+  ],
+  "error_rate": 0.0,
+  "system_point_estimates": {
+    "agent_flat_memory": {
+      "task_success_rate": 0.75,
+      "hard_constraint_satisfaction_rate": 0.75,
+      "profile_contamination_rate": 0.13
+    },
+    "agent_hierarchical_memory": {
+      "task_success_rate": 0.75,
+      "hard_constraint_satisfaction_rate": 0.75,
+      "profile_contamination_rate": 0.0
+    },
+    "fixed_pipeline": {
+      "task_success_rate": 0.49,
+      "hard_constraint_satisfaction_rate": 0.75,
+      "profile_contamination_rate": 0.0
+    }
+  },
+  "note": "Gate checks execution integrity and at least one preregistered mechanism signal; it does not select the best-looking system.",
+  "run_id": "agentrec_pilot-702072dfc94ec026-20260825T094146-2e6c2a",
+  "config_hash": "702072dfc94ec026",
+  "code_hash": "74aa0137a3ef25c5"
+}

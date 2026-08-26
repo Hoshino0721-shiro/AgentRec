@@ -1,0 +1,44 @@
+experiment:
+  name: agentrec_pilot
+  stage: pilot
+  seeds: [42]
+  max_tasks: 100
+  output_dir: results/raw/pilot
+
+data:
+  source: controlled_catalog
+  controlled: true
+  scenarios:
+    - clear_single_turn
+    - needs_clarification
+    - preference_alignment
+    - preference_conflict
+    - recipient_shift
+    - hard_constraints
+    - rejection_recovery
+    - cold_start
+
+systems:
+  - fixed_pipeline
+  - agent_flat_memory
+  - agent_hierarchical_memory
+
+agent:
+  model: offline-deterministic-policy
+  temperature: 0
+  max_turns: 8
+  max_tool_calls: 12
+  enable_clarification: true
+  enable_replanning: true
+
+evaluation:
+  primary_metrics:
+    - task_success_rate
+    - hard_constraint_satisfaction_rate
+    - profile_contamination_rate
+    - recovery_success_rate
+  recommendation_metrics:
+    - hr_at_5
+    - ndcg_at_5
+  bootstrap_samples: 1000
+  confidence_level: 0.95

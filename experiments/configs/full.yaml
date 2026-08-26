@@ -1,0 +1,65 @@
+experiment:
+  name: agentrec_full
+  stage: full
+  seeds: [42, 123, 2026]
+  max_tasks: 300
+  output_dir: results/raw/full
+
+data:
+  source: controlled_catalog
+  controlled: true
+  include_controlled_scenarios: true
+  scenarios:
+    - clear_single_turn
+    - needs_clarification
+    - preference_alignment
+    - preference_conflict
+    - recipient_shift
+    - hard_constraints
+    - rejection_recovery
+    - cold_start
+
+systems:
+  - fixed_pipeline
+  - agent_no_memory
+  - agent_flat_memory
+  - agent_hierarchical_memory
+  - full_agent
+  - ablation_no_clarification
+  - ablation_no_replanning
+  - ablation_no_recipient_isolation
+  - ablation_no_temporal_decay
+
+agent:
+  model: offline-deterministic-policy
+  temperature: 0
+  max_turns: 8
+  max_tool_calls: 12
+  enable_clarification: true
+  enable_replanning: true
+
+evaluation:
+  primary_metrics:
+    - task_success_rate
+    - hard_constraint_satisfaction_rate
+    - profile_contamination_rate
+    - recovery_success_rate
+  agent_metrics:
+    - useful_clarification_rate
+    - redundant_tool_call_rate
+    - memory_write_accuracy
+    - stale_memory_misuse_rate
+    - explanation_faithfulness
+    - mean_turns
+    - mean_tool_calls
+    - mean_latency_ms
+    - mean_token_usage
+  recommendation_metrics:
+    - hr_at_1
+    - hr_at_3
+    - hr_at_5
+    - ndcg_at_3
+    - ndcg_at_5
+    - recall_at_5
+  bootstrap_samples: 2000
+  confidence_level: 0.95

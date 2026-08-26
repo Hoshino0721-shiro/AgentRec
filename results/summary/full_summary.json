@@ -1,0 +1,1343 @@
+{
+  "n_records": 8100,
+  "systems": {
+    "ablation_no_clarification": {
+      "n": 900,
+      "metrics": {
+        "explanation_faithfulness": {
+          "n": 900,
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        },
+        "hard_constraint_satisfaction_rate": {
+          "n": 900,
+          "mean": 0.9366666666666666,
+          "ci_low": 0.92,
+          "ci_high": 0.9522222222222222
+        },
+        "hr_at_1": {
+          "n": 900,
+          "mean": 0.9366666666666666,
+          "ci_low": 0.92,
+          "ci_high": 0.9522222222222222
+        },
+        "hr_at_3": {
+          "n": 900,
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        },
+        "hr_at_5": {
+          "n": 900,
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        },
+        "mean_latency_ms": {
+          "n": 900,
+          "mean": 0.7608500000000005,
+          "ci_low": 0.36763972222222235,
+          "ci_high": 1.4532954166666663
+        },
+        "mean_token_usage": {
+          "n": 900,
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "mean_tool_calls": {
+          "n": 900,
+          "mean": 6.25,
+          "ci_low": 6.111111111111111,
+          "ci_high": 6.388888888888889
+        },
+        "mean_turns": {
+          "n": 900,
+          "mean": 2.25,
+          "ci_low": 2.2222222222222223,
+          "ci_high": 2.277805555555555
+        },
+        "memory_write_accuracy": {
+          "n": 900,
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        },
+        "ndcg_at_3": {
+          "n": 900,
+          "mean": 0.9766255510595251,
+          "ci_low": 0.9708844583373029,
+          "ci_high": 0.9827767218333342
+        },
+        "ndcg_at_5": {
+          "n": 900,
+          "mean": 0.9766255510595251,
+          "ci_low": 0.970474380285716,
+          "ci_high": 0.9823666437817469
+        },
+        "profile_contamination_rate": {
+          "n": 900,
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "recall_at_5": {
+          "n": 900,
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        },
+        "recovery_success_rate": {
+          "n": 225,
+          "mean": 0.7466666666666667,
+          "ci_low": 0.6888888888888889,
+          "ci_high": 0.8001111111111106
+        },
+        "redundant_tool_call_rate": {
+          "n": 900,
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "stale_memory_misuse_rate": {
+          "n": 900,
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "task_success_rate": {
+          "n": 900,
+          "mean": 0.9366666666666666,
+          "ci_low": 0.92,
+          "ci_high": 0.9522222222222222
+        }
+      },
+      "failure_counts": {
+        "hard_constraint_violation": 57,
+        "success": 843
+      },
+      "error_count": 0
+    },
+    "ablation_no_recipient_isolation": {
+      "n": 900,
+      "metrics": {
+        "explanation_faithfulness": {
+          "n": 900,
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        },
+        "hard_constraint_satisfaction_rate": {
+          "n": 900,
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        },
+        "hr_at_1": {
+          "n": 900,
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        },
+        "hr_at_3": {
+          "n": 900,
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        },
+        "hr_at_5": {
+          "n": 900,
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        },
+        "mean_latency_ms": {
+          "n": 900,
+          "mean": 0.4507711111111123,
+          "ci_low": 0.34229169444444485,
+          "ci_high": 0.6569847777777773
+        },
+        "mean_token_usage": {
+          "n": 900,
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "mean_tool_calls": {
+          "n": 900,
+          "mean": 5.616666666666666,
+          "ci_low": 5.516666666666667,
+          "ci_high": 5.727777777777778
+        },
+        "mean_turns": {
+          "n": 900,
+          "mean": 2.25,
+          "ci_low": 2.2222222222222223,
+          "ci_high": 2.277805555555555
+        },
+        "memory_write_accuracy": {
+          "n": 900,
+          "mean": 0.9162962962962975,
+          "ci_low": 0.9014814814814829,
+          "ci_high": 0.9311111111111118
+        },
+        "ndcg_at_3": {
+          "n": 900,
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        },
+        "ndcg_at_5": {
+          "n": 900,
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        },
+        "profile_contamination_rate": {
+          "n": 900,
+          "mean": 0.12555555555555556,
+          "ci_low": 0.10555555555555556,
+          "ci_high": 0.14777777777777779
+        },
+        "recall_at_5": {
+          "n": 900,
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        },
+        "recovery_success_rate": {
+          "n": 111,
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        },
+        "redundant_tool_call_rate": {
+          "n": 900,
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "stale_memory_misuse_rate": {
+          "n": 900,
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "task_success_rate": {
+          "n": 900,
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        },
+        "useful_clarification_rate": {
+          "n": 114,
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        }
+      },
+      "failure_counts": {
+        "profile_contamination": 113,
+        "success": 787
+      },
+      "error_count": 0
+    },
+    "ablation_no_replanning": {
+      "n": 900,
+      "metrics": {
+        "explanation_faithfulness": {
+          "n": 900,
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        },
+        "hard_constraint_satisfaction_rate": {
+          "n": 900,
+          "mean": 0.8766666666666667,
+          "ci_low": 0.8544444444444445,
+          "ci_high": 0.8977777777777778
+        },
+        "hr_at_1": {
+          "n": 900,
+          "mean": 0.8766666666666667,
+          "ci_low": 0.8544166666666668,
+          "ci_high": 0.8977777777777778
+        },
+        "hr_at_3": {
+          "n": 900,
+          "mean": 0.8766666666666667,
+          "ci_low": 0.8555277777777778,
+          "ci_high": 0.8977777777777778
+        },
+        "hr_at_5": {
+          "n": 900,
+          "mean": 0.8766666666666667,
+          "ci_low": 0.8555555555555555,
+          "ci_high": 0.8977777777777778
+        },
+        "mean_latency_ms": {
+          "n": 900,
+          "mean": 0.5186533333333333,
+          "ci_low": 0.3202187222222225,
+          "ci_high": 0.909792805555556
+        },
+        "mean_token_usage": {
+          "n": 900,
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "mean_tool_calls": {
+          "n": 900,
+          "mean": 5.0,
+          "ci_low": 5.0,
+          "ci_high": 5.0
+        },
+        "mean_turns": {
+          "n": 900,
+          "mean": 2.1266666666666665,
+          "ci_low": 2.1055555555555556,
+          "ci_high": 2.148888888888889
+        },
+        "memory_write_accuracy": {
+          "n": 900,
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        },
+        "ndcg_at_3": {
+          "n": 900,
+          "mean": 0.8766666666666667,
+          "ci_low": 0.8544444444444445,
+          "ci_high": 0.8977777777777778
+        },
+        "ndcg_at_5": {
+          "n": 900,
+          "mean": 0.8766666666666667,
+          "ci_low": 0.8566666666666667,
+          "ci_high": 0.8977777777777778
+        },
+        "profile_contamination_rate": {
+          "n": 900,
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "recall_at_5": {
+          "n": 900,
+          "mean": 0.8766666666666667,
+          "ci_low": 0.8555555555555555,
+          "ci_high": 0.8977777777777778
+        },
+        "recovery_success_rate": {
+          "n": 111,
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "redundant_tool_call_rate": {
+          "n": 900,
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "stale_memory_misuse_rate": {
+          "n": 900,
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "task_success_rate": {
+          "n": 900,
+          "mean": 0.8766666666666667,
+          "ci_low": 0.8544444444444445,
+          "ci_high": 0.8977777777777778
+        },
+        "useful_clarification_rate": {
+          "n": 114,
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        }
+      },
+      "failure_counts": {
+        "hard_constraint_violation": 111,
+        "success": 789
+      },
+      "error_count": 0
+    },
+    "ablation_no_temporal_decay": {
+      "n": 900,
+      "metrics": {
+        "explanation_faithfulness": {
+          "n": 900,
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        },
+        "hard_constraint_satisfaction_rate": {
+          "n": 900,
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        },
+        "hr_at_1": {
+          "n": 900,
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        },
+        "hr_at_3": {
+          "n": 900,
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        },
+        "hr_at_5": {
+          "n": 900,
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        },
+        "mean_latency_ms": {
+          "n": 900,
+          "mean": 0.3728200000000002,
+          "ci_low": 0.3628140555555555,
+          "ci_high": 0.38363827777777804
+        },
+        "mean_token_usage": {
+          "n": 900,
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "mean_tool_calls": {
+          "n": 900,
+          "mean": 6.25,
+          "ci_low": 6.111111111111111,
+          "ci_high": 6.394444444444445
+        },
+        "mean_turns": {
+          "n": 900,
+          "mean": 2.3766666666666665,
+          "ci_low": 2.3455555555555554,
+          "ci_high": 2.4077777777777776
+        },
+        "memory_write_accuracy": {
+          "n": 900,
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        },
+        "ndcg_at_3": {
+          "n": 900,
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        },
+        "ndcg_at_5": {
+          "n": 900,
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        },
+        "profile_contamination_rate": {
+          "n": 900,
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "recall_at_5": {
+          "n": 900,
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        },
+        "recovery_success_rate": {
+          "n": 225,
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        },
+        "redundant_tool_call_rate": {
+          "n": 900,
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "stale_memory_misuse_rate": {
+          "n": 900,
+          "mean": 0.12666666666666668,
+          "ci_low": 0.10666666666666667,
+          "ci_high": 0.14888888888888888
+        },
+        "task_success_rate": {
+          "n": 900,
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        },
+        "useful_clarification_rate": {
+          "n": 114,
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        }
+      },
+      "failure_counts": {
+        "success": 900
+      },
+      "error_count": 0
+    },
+    "agent_flat_memory": {
+      "n": 900,
+      "metrics": {
+        "explanation_faithfulness": {
+          "n": 900,
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        },
+        "hard_constraint_satisfaction_rate": {
+          "n": 900,
+          "mean": 0.75,
+          "ci_low": 0.7211111111111111,
+          "ci_high": 0.7777777777777778
+        },
+        "hr_at_1": {
+          "n": 900,
+          "mean": 0.75,
+          "ci_low": 0.72,
+          "ci_high": 0.7788888888888889
+        },
+        "hr_at_3": {
+          "n": 900,
+          "mean": 0.8766666666666667,
+          "ci_low": 0.8555277777777778,
+          "ci_high": 0.8977777777777778
+        },
+        "hr_at_5": {
+          "n": 900,
+          "mean": 0.8766666666666667,
+          "ci_low": 0.8555555555555555,
+          "ci_high": 0.8977777777777778
+        },
+        "mean_latency_ms": {
+          "n": 900,
+          "mean": 0.34532444444444466,
+          "ci_low": 0.3136206944444443,
+          "ci_high": 0.40204055555555585
+        },
+        "mean_token_usage": {
+          "n": 900,
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "mean_tool_calls": {
+          "n": 900,
+          "mean": 5.0,
+          "ci_low": 5.0,
+          "ci_high": 5.0
+        },
+        "mean_turns": {
+          "n": 900,
+          "mean": 2.0,
+          "ci_low": 2.0,
+          "ci_high": 2.0
+        },
+        "memory_write_accuracy": {
+          "n": 900,
+          "mean": 0.9162962962962975,
+          "ci_low": 0.9014814814814829,
+          "ci_high": 0.9311111111111118
+        },
+        "ndcg_at_3": {
+          "n": 900,
+          "mean": 0.8216255510595253,
+          "ci_low": 0.7990930551048633,
+          "ci_high": 0.8430953490246047
+        },
+        "ndcg_at_5": {
+          "n": 900,
+          "mean": 0.8216255510595253,
+          "ci_low": 0.7995481474797634,
+          "ci_high": 0.8432688413419656
+        },
+        "profile_contamination_rate": {
+          "n": 900,
+          "mean": 0.12555555555555556,
+          "ci_low": 0.10555555555555556,
+          "ci_high": 0.14777777777777779
+        },
+        "recall_at_5": {
+          "n": 900,
+          "mean": 0.8766666666666667,
+          "ci_low": 0.8555555555555555,
+          "ci_high": 0.8977777777777778
+        },
+        "recovery_success_rate": {
+          "n": 225,
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "redundant_tool_call_rate": {
+          "n": 900,
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "stale_memory_misuse_rate": {
+          "n": 900,
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "task_success_rate": {
+          "n": 900,
+          "mean": 0.75,
+          "ci_low": 0.7210833333333334,
+          "ci_high": 0.7777777777777778
+        }
+      },
+      "failure_counts": {
+        "hard_constraint_violation": 225,
+        "profile_contamination": 113,
+        "success": 562
+      },
+      "error_count": 0
+    },
+    "agent_hierarchical_memory": {
+      "n": 900,
+      "metrics": {
+        "explanation_faithfulness": {
+          "n": 900,
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        },
+        "hard_constraint_satisfaction_rate": {
+          "n": 900,
+          "mean": 0.75,
+          "ci_low": 0.7211111111111111,
+          "ci_high": 0.7777777777777778
+        },
+        "hr_at_1": {
+          "n": 900,
+          "mean": 0.75,
+          "ci_low": 0.72,
+          "ci_high": 0.7788888888888889
+        },
+        "hr_at_3": {
+          "n": 900,
+          "mean": 0.8766666666666667,
+          "ci_low": 0.8555277777777778,
+          "ci_high": 0.8977777777777778
+        },
+        "hr_at_5": {
+          "n": 900,
+          "mean": 0.8766666666666667,
+          "ci_low": 0.8555555555555555,
+          "ci_high": 0.8977777777777778
+        },
+        "mean_latency_ms": {
+          "n": 900,
+          "mean": 0.30644111111111105,
+          "ci_low": 0.2999397499999998,
+          "ci_high": 0.31305055555555555
+        },
+        "mean_token_usage": {
+          "n": 900,
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "mean_tool_calls": {
+          "n": 900,
+          "mean": 5.0,
+          "ci_low": 5.0,
+          "ci_high": 5.0
+        },
+        "mean_turns": {
+          "n": 900,
+          "mean": 2.0,
+          "ci_low": 2.0,
+          "ci_high": 2.0
+        },
+        "memory_write_accuracy": {
+          "n": 900,
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        },
+        "ndcg_at_3": {
+          "n": 900,
+          "mean": 0.8216255510595253,
+          "ci_low": 0.7990930551048633,
+          "ci_high": 0.8430953490246047
+        },
+        "ndcg_at_5": {
+          "n": 900,
+          "mean": 0.8216255510595253,
+          "ci_low": 0.7995481474797634,
+          "ci_high": 0.8432688413419656
+        },
+        "profile_contamination_rate": {
+          "n": 900,
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "recall_at_5": {
+          "n": 900,
+          "mean": 0.8766666666666667,
+          "ci_low": 0.8555555555555555,
+          "ci_high": 0.8977777777777778
+        },
+        "recovery_success_rate": {
+          "n": 225,
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "redundant_tool_call_rate": {
+          "n": 900,
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "stale_memory_misuse_rate": {
+          "n": 900,
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "task_success_rate": {
+          "n": 900,
+          "mean": 0.75,
+          "ci_low": 0.7210833333333334,
+          "ci_high": 0.7777777777777778
+        }
+      },
+      "failure_counts": {
+        "hard_constraint_violation": 225,
+        "success": 675
+      },
+      "error_count": 0
+    },
+    "agent_no_memory": {
+      "n": 900,
+      "metrics": {
+        "explanation_faithfulness": {
+          "n": 900,
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        },
+        "hard_constraint_satisfaction_rate": {
+          "n": 900,
+          "mean": 0.75,
+          "ci_low": 0.7211111111111111,
+          "ci_high": 0.7777777777777778
+        },
+        "hr_at_1": {
+          "n": 900,
+          "mean": 0.49777777777777776,
+          "ci_low": 0.4644166666666667,
+          "ci_high": 0.5311111111111111
+        },
+        "hr_at_3": {
+          "n": 900,
+          "mean": 0.6244444444444445,
+          "ci_low": 0.5933333333333334,
+          "ci_high": 0.6555555555555556
+        },
+        "hr_at_5": {
+          "n": 900,
+          "mean": 0.7511111111111111,
+          "ci_low": 0.7233333333333334,
+          "ci_high": 0.7789166666666665
+        },
+        "mean_latency_ms": {
+          "n": 900,
+          "mean": 0.26364111111111116,
+          "ci_low": 0.251392166666667,
+          "ci_high": 0.2856772500000004
+        },
+        "mean_token_usage": {
+          "n": 900,
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "mean_tool_calls": {
+          "n": 900,
+          "mean": 5.0,
+          "ci_low": 5.0,
+          "ci_high": 5.0
+        },
+        "mean_turns": {
+          "n": 900,
+          "mean": 2.0,
+          "ci_low": 2.0,
+          "ci_high": 2.0
+        },
+        "memory_write_accuracy": {
+          "n": 900,
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        },
+        "ndcg_at_3": {
+          "n": 900,
+          "mean": 0.5694033288373039,
+          "ci_low": 0.5388477732817484,
+          "ci_high": 0.599403987698812
+        },
+        "ndcg_at_5": {
+          "n": 900,
+          "mean": 0.6184046844203461,
+          "ci_low": 0.5902283941972434,
+          "ci_high": 0.6454115468733479
+        },
+        "profile_contamination_rate": {
+          "n": 900,
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "recall_at_5": {
+          "n": 900,
+          "mean": 0.7511111111111111,
+          "ci_low": 0.7244166666666667,
+          "ci_high": 0.78
+        },
+        "recovery_success_rate": {
+          "n": 452,
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "redundant_tool_call_rate": {
+          "n": 900,
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "stale_memory_misuse_rate": {
+          "n": 900,
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "task_success_rate": {
+          "n": 900,
+          "mean": 0.49777777777777776,
+          "ci_low": 0.46444444444444444,
+          "ci_high": 0.53
+        }
+      },
+      "failure_counts": {
+        "failed_recovery": 227,
+        "hard_constraint_violation": 225,
+        "success": 448
+      },
+      "error_count": 0
+    },
+    "fixed_pipeline": {
+      "n": 900,
+      "metrics": {
+        "explanation_faithfulness": {
+          "n": 900,
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        },
+        "hard_constraint_satisfaction_rate": {
+          "n": 900,
+          "mean": 0.75,
+          "ci_low": 0.7211111111111111,
+          "ci_high": 0.7777777777777778
+        },
+        "hr_at_1": {
+          "n": 900,
+          "mean": 0.49777777777777776,
+          "ci_low": 0.4644166666666667,
+          "ci_high": 0.5311111111111111
+        },
+        "hr_at_3": {
+          "n": 900,
+          "mean": 0.6244444444444445,
+          "ci_low": 0.5933333333333334,
+          "ci_high": 0.6555555555555556
+        },
+        "hr_at_5": {
+          "n": 900,
+          "mean": 0.7511111111111111,
+          "ci_low": 0.7233333333333334,
+          "ci_high": 0.7789166666666665
+        },
+        "mean_latency_ms": {
+          "n": 900,
+          "mean": 0.6042733333333339,
+          "ci_low": 0.23292127777777807,
+          "ci_high": 1.223299388888889
+        },
+        "mean_token_usage": {
+          "n": 900,
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "mean_tool_calls": {
+          "n": 900,
+          "mean": 5.0,
+          "ci_low": 5.0,
+          "ci_high": 5.0
+        },
+        "mean_turns": {
+          "n": 900,
+          "mean": 2.0,
+          "ci_low": 2.0,
+          "ci_high": 2.0
+        },
+        "memory_write_accuracy": {
+          "n": 900,
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        },
+        "ndcg_at_3": {
+          "n": 900,
+          "mean": 0.5694033288373039,
+          "ci_low": 0.5388477732817484,
+          "ci_high": 0.599403987698812
+        },
+        "ndcg_at_5": {
+          "n": 900,
+          "mean": 0.6184046844203461,
+          "ci_low": 0.5902283941972434,
+          "ci_high": 0.6454115468733479
+        },
+        "profile_contamination_rate": {
+          "n": 900,
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "recall_at_5": {
+          "n": 900,
+          "mean": 0.7511111111111111,
+          "ci_low": 0.7244166666666667,
+          "ci_high": 0.78
+        },
+        "recovery_success_rate": {
+          "n": 452,
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "redundant_tool_call_rate": {
+          "n": 900,
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "stale_memory_misuse_rate": {
+          "n": 900,
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "task_success_rate": {
+          "n": 900,
+          "mean": 0.49777777777777776,
+          "ci_low": 0.46444444444444444,
+          "ci_high": 0.53
+        }
+      },
+      "failure_counts": {
+        "failed_recovery": 227,
+        "hard_constraint_violation": 225,
+        "success": 448
+      },
+      "error_count": 0
+    },
+    "full_agent": {
+      "n": 900,
+      "metrics": {
+        "explanation_faithfulness": {
+          "n": 900,
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        },
+        "hard_constraint_satisfaction_rate": {
+          "n": 900,
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        },
+        "hr_at_1": {
+          "n": 900,
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        },
+        "hr_at_3": {
+          "n": 900,
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        },
+        "hr_at_5": {
+          "n": 900,
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        },
+        "mean_latency_ms": {
+          "n": 900,
+          "mean": 0.40650000000000014,
+          "ci_low": 0.3447388611111117,
+          "ci_high": 0.5196218611111112
+        },
+        "mean_token_usage": {
+          "n": 900,
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "mean_tool_calls": {
+          "n": 900,
+          "mean": 5.616666666666666,
+          "ci_low": 5.516666666666667,
+          "ci_high": 5.727777777777778
+        },
+        "mean_turns": {
+          "n": 900,
+          "mean": 2.25,
+          "ci_low": 2.2222222222222223,
+          "ci_high": 2.277805555555555
+        },
+        "memory_write_accuracy": {
+          "n": 900,
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        },
+        "ndcg_at_3": {
+          "n": 900,
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        },
+        "ndcg_at_5": {
+          "n": 900,
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        },
+        "profile_contamination_rate": {
+          "n": 900,
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "recall_at_5": {
+          "n": 900,
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        },
+        "recovery_success_rate": {
+          "n": 111,
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        },
+        "redundant_tool_call_rate": {
+          "n": 900,
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "stale_memory_misuse_rate": {
+          "n": 900,
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "task_success_rate": {
+          "n": 900,
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        },
+        "useful_clarification_rate": {
+          "n": 114,
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        }
+      },
+      "failure_counts": {
+        "success": 900
+      },
+      "error_count": 0
+    }
+  },
+  "paired_comparisons": {
+    "ablation_no_clarification": {
+      "reference": "full_agent",
+      "common_episodes": 900,
+      "metrics": {
+        "task_success_rate": {
+          "n_pairs": 900,
+          "mean": 0.06333333333333334,
+          "ci_low": 0.04777777777777778,
+          "ci_high": 0.08
+        },
+        "hard_constraint_satisfaction_rate": {
+          "n_pairs": 900,
+          "mean": 0.06333333333333334,
+          "ci_low": 0.04777777777777778,
+          "ci_high": 0.07888888888888888
+        },
+        "profile_contamination_rate": {
+          "n_pairs": 900,
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "recovery_success_rate": {
+          "n_pairs": 111,
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        }
+      }
+    },
+    "ablation_no_recipient_isolation": {
+      "reference": "full_agent",
+      "common_episodes": 900,
+      "metrics": {
+        "task_success_rate": {
+          "n_pairs": 900,
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "hard_constraint_satisfaction_rate": {
+          "n_pairs": 900,
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "profile_contamination_rate": {
+          "n_pairs": 900,
+          "mean": -0.12555555555555556,
+          "ci_low": -0.14780555555555552,
+          "ci_high": -0.10441666666666682
+        },
+        "recovery_success_rate": {
+          "n_pairs": 111,
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        }
+      }
+    },
+    "ablation_no_replanning": {
+      "reference": "full_agent",
+      "common_episodes": 900,
+      "metrics": {
+        "task_success_rate": {
+          "n_pairs": 900,
+          "mean": 0.12333333333333334,
+          "ci_low": 0.10222222222222223,
+          "ci_high": 0.14555555555555555
+        },
+        "hard_constraint_satisfaction_rate": {
+          "n_pairs": 900,
+          "mean": 0.12333333333333334,
+          "ci_low": 0.10222222222222223,
+          "ci_high": 0.14444444444444443
+        },
+        "profile_contamination_rate": {
+          "n_pairs": 900,
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "recovery_success_rate": {
+          "n_pairs": 111,
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        }
+      }
+    },
+    "ablation_no_temporal_decay": {
+      "reference": "full_agent",
+      "common_episodes": 900,
+      "metrics": {
+        "task_success_rate": {
+          "n_pairs": 900,
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "hard_constraint_satisfaction_rate": {
+          "n_pairs": 900,
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "profile_contamination_rate": {
+          "n_pairs": 900,
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "recovery_success_rate": {
+          "n_pairs": 111,
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        }
+      }
+    },
+    "agent_flat_memory": {
+      "reference": "full_agent",
+      "common_episodes": 900,
+      "metrics": {
+        "task_success_rate": {
+          "n_pairs": 900,
+          "mean": 0.25,
+          "ci_low": 0.2222222222222222,
+          "ci_high": 0.2788888888888889
+        },
+        "hard_constraint_satisfaction_rate": {
+          "n_pairs": 900,
+          "mean": 0.25,
+          "ci_low": 0.22111111111111112,
+          "ci_high": 0.2777777777777778
+        },
+        "profile_contamination_rate": {
+          "n_pairs": 900,
+          "mean": -0.12555555555555556,
+          "ci_low": -0.14780555555555552,
+          "ci_high": -0.10441666666666682
+        },
+        "recovery_success_rate": {
+          "n_pairs": 111,
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        }
+      }
+    },
+    "agent_hierarchical_memory": {
+      "reference": "full_agent",
+      "common_episodes": 900,
+      "metrics": {
+        "task_success_rate": {
+          "n_pairs": 900,
+          "mean": 0.25,
+          "ci_low": 0.2222222222222222,
+          "ci_high": 0.2788888888888889
+        },
+        "hard_constraint_satisfaction_rate": {
+          "n_pairs": 900,
+          "mean": 0.25,
+          "ci_low": 0.22111111111111112,
+          "ci_high": 0.2777777777777778
+        },
+        "profile_contamination_rate": {
+          "n_pairs": 900,
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "recovery_success_rate": {
+          "n_pairs": 111,
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        }
+      }
+    },
+    "agent_no_memory": {
+      "reference": "full_agent",
+      "common_episodes": 900,
+      "metrics": {
+        "task_success_rate": {
+          "n_pairs": 900,
+          "mean": 0.5022222222222222,
+          "ci_low": 0.47,
+          "ci_high": 0.5344722222222221
+        },
+        "hard_constraint_satisfaction_rate": {
+          "n_pairs": 900,
+          "mean": 0.25,
+          "ci_low": 0.22111111111111112,
+          "ci_high": 0.2777777777777778
+        },
+        "profile_contamination_rate": {
+          "n_pairs": 900,
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "recovery_success_rate": {
+          "n_pairs": 111,
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        }
+      }
+    },
+    "fixed_pipeline": {
+      "reference": "full_agent",
+      "common_episodes": 900,
+      "metrics": {
+        "task_success_rate": {
+          "n_pairs": 900,
+          "mean": 0.5022222222222222,
+          "ci_low": 0.47,
+          "ci_high": 0.5344722222222221
+        },
+        "hard_constraint_satisfaction_rate": {
+          "n_pairs": 900,
+          "mean": 0.25,
+          "ci_low": 0.22111111111111112,
+          "ci_high": 0.2777777777777778
+        },
+        "profile_contamination_rate": {
+          "n_pairs": 900,
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "recovery_success_rate": {
+          "n_pairs": 111,
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        }
+      }
+    }
+  },
+  "run_id": "agentrec_full-a6c5235444e80f7b-20260825T094146-76f830",
+  "stage": "full",
+  "config_hash": "a6c5235444e80f7b",
+  "git_commit": "09facfe",
+  "code_hash": "74aa0137a3ef25c5",
+  "started_at": "2026-08-25T01:41:46.724486Z",
+  "finished_at": "2026-08-25T01:41:55.015673Z",
+  "raw_run_dir": "results/raw/full/agentrec_full-a6c5235444e80f7b-20260825T094146-76f830",
+  "trajectories_file": "results/raw/full/agentrec_full-a6c5235444e80f7b-20260825T094146-76f830/trajectories.jsonl"
+}

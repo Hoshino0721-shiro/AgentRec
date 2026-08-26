@@ -1,0 +1,40 @@
+experiment:
+  name: agentrec_smoke
+  stage: smoke
+  seeds: [42]
+  max_tasks: 20
+  output_dir: results/raw/smoke
+
+data:
+  source: controlled_catalog
+  controlled: true
+  scenarios:
+    - clear_single_turn
+    - needs_clarification
+    - preference_alignment
+    - preference_conflict
+    - recipient_shift
+    - hard_constraints
+    - rejection_recovery
+    - cold_start
+
+systems:
+  - full_agent
+
+agent:
+  model: offline-deterministic-policy
+  temperature: 0
+  max_turns: 8
+  max_tool_calls: 12
+
+evaluation:
+  primary_metrics:
+    - task_success_rate
+    - hard_constraint_satisfaction_rate
+    - profile_contamination_rate
+    - recovery_success_rate
+  recommendation_metrics:
+    - hr_at_5
+    - ndcg_at_5
+  bootstrap_samples: 500
+  confidence_level: 0.95

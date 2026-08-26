@@ -1,0 +1,28 @@
+experiment:
+  name: agentrecbench_real_smoke
+  stage: real_smoke
+  seed: 42
+  max_tasks: 20
+  output_dir: results/raw/real_smoke
+
+data:
+  source: agentrecbench_amazon_short_v1
+  data_type: real_log
+  controlled: false
+  path: data/processed/agentrecbench_short_term_amazon_100.json
+  dataset_revision: 288f7f09ca0387e5169a61b219047aea397e4b06
+
+systems:
+  - candidate_order
+  - popularity
+  - full_history_lexical
+  - short_term_recency
+
+evaluation:
+  primary_metrics:
+    - hr_at_1
+    - hr_at_3
+    - hr_at_5
+    - ndcg_at_5
+  bootstrap_samples: 500
+  confidence_level: 0.95

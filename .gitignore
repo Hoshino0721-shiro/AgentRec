@@ -1,0 +1,27 @@
+.env
+.venv/
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.py[cod]
+*.log
+.DS_Store
+
+data/external/*
+!data/external/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+!data/processed/catalog.json
+results/raw/*
+!results/raw/.gitkeep
+results/api_usage/*
+!results/api_usage/.gitkeep
+
+# Local resume exports and visual QA artifacts are not part of the project.
+artifacts/
+
+# Reports are tracked, except bulky rendered artifacts.
+reports/*.html
+reports/*.pdf
+reports/assets/

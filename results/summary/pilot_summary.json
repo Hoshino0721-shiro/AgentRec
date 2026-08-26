@@ -1,0 +1,370 @@
+{
+  "n_records": 300,
+  "systems": {
+    "agent_flat_memory": {
+      "n": 100,
+      "metrics": {
+        "explanation_faithfulness": {
+          "n": 100,
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        },
+        "hard_constraint_satisfaction_rate": {
+          "n": 100,
+          "mean": 0.75,
+          "ci_low": 0.66,
+          "ci_high": 0.83
+        },
+        "hr_at_1": {
+          "n": 100,
+          "mean": 0.75,
+          "ci_low": 0.65,
+          "ci_high": 0.83
+        },
+        "hr_at_3": {
+          "n": 100,
+          "mean": 0.88,
+          "ci_low": 0.81,
+          "ci_high": 0.94
+        },
+        "hr_at_5": {
+          "n": 100,
+          "mean": 0.88,
+          "ci_low": 0.82,
+          "ci_high": 0.94
+        },
+        "mean_latency_ms": {
+          "n": 100,
+          "mean": 0.31629000000000007,
+          "ci_low": 0.29726975,
+          "ci_high": 0.33726300000000003
+        },
+        "mean_token_usage": {
+          "n": 100,
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "mean_tool_calls": {
+          "n": 100,
+          "mean": 5.0,
+          "ci_low": 5.0,
+          "ci_high": 5.0
+        },
+        "mean_turns": {
+          "n": 100,
+          "mean": 2.0,
+          "ci_low": 2.0,
+          "ci_high": 2.0
+        },
+        "memory_write_accuracy": {
+          "n": 100,
+          "mean": 0.9133333333333331,
+          "ci_low": 0.8666666666666665,
+          "ci_high": 0.9533333333333335
+        },
+        "ndcg_at_3": {
+          "n": 100,
+          "mean": 0.8228557852142874,
+          "ci_low": 0.7515464876785728,
+          "ci_high": 0.8865524174321442
+        },
+        "ndcg_at_5": {
+          "n": 100,
+          "mean": 0.8228557852142874,
+          "ci_low": 0.7504743802857167,
+          "ci_high": 0.8878825878991088
+        },
+        "profile_contamination_rate": {
+          "n": 100,
+          "mean": 0.13,
+          "ci_low": 0.07,
+          "ci_high": 0.2
+        },
+        "recall_at_5": {
+          "n": 100,
+          "mean": 0.88,
+          "ci_low": 0.82,
+          "ci_high": 0.94
+        },
+        "recovery_success_rate": {
+          "n": 25,
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "redundant_tool_call_rate": {
+          "n": 100,
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "stale_memory_misuse_rate": {
+          "n": 100,
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "task_success_rate": {
+          "n": 100,
+          "mean": 0.75,
+          "ci_low": 0.66,
+          "ci_high": 0.83
+        }
+      },
+      "failure_counts": {
+        "hard_constraint_violation": 25,
+        "profile_contamination": 13,
+        "success": 62
+      },
+      "error_count": 0
+    },
+    "agent_hierarchical_memory": {
+      "n": 100,
+      "metrics": {
+        "explanation_faithfulness": {
+          "n": 100,
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        },
+        "hard_constraint_satisfaction_rate": {
+          "n": 100,
+          "mean": 0.75,
+          "ci_low": 0.66,
+          "ci_high": 0.83
+        },
+        "hr_at_1": {
+          "n": 100,
+          "mean": 0.75,
+          "ci_low": 0.65,
+          "ci_high": 0.83
+        },
+        "hr_at_3": {
+          "n": 100,
+          "mean": 0.88,
+          "ci_low": 0.81,
+          "ci_high": 0.94
+        },
+        "hr_at_5": {
+          "n": 100,
+          "mean": 0.88,
+          "ci_low": 0.82,
+          "ci_high": 0.94
+        },
+        "mean_latency_ms": {
+          "n": 100,
+          "mean": 0.31790000000000007,
+          "ci_low": 0.29947875,
+          "ci_high": 0.3367115
+        },
+        "mean_token_usage": {
+          "n": 100,
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "mean_tool_calls": {
+          "n": 100,
+          "mean": 5.0,
+          "ci_low": 5.0,
+          "ci_high": 5.0
+        },
+        "mean_turns": {
+          "n": 100,
+          "mean": 2.0,
+          "ci_low": 2.0,
+          "ci_high": 2.0
+        },
+        "memory_write_accuracy": {
+          "n": 100,
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        },
+        "ndcg_at_3": {
+          "n": 100,
+          "mean": 0.8228557852142874,
+          "ci_low": 0.7515464876785728,
+          "ci_high": 0.8865524174321442
+        },
+        "ndcg_at_5": {
+          "n": 100,
+          "mean": 0.8228557852142874,
+          "ci_low": 0.7504743802857167,
+          "ci_high": 0.8878825878991088
+        },
+        "profile_contamination_rate": {
+          "n": 100,
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "recall_at_5": {
+          "n": 100,
+          "mean": 0.88,
+          "ci_low": 0.82,
+          "ci_high": 0.94
+        },
+        "recovery_success_rate": {
+          "n": 25,
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "redundant_tool_call_rate": {
+          "n": 100,
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "stale_memory_misuse_rate": {
+          "n": 100,
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "task_success_rate": {
+          "n": 100,
+          "mean": 0.75,
+          "ci_low": 0.66,
+          "ci_high": 0.83
+        }
+      },
+      "failure_counts": {
+        "hard_constraint_violation": 25,
+        "success": 75
+      },
+      "error_count": 0
+    },
+    "fixed_pipeline": {
+      "n": 100,
+      "metrics": {
+        "explanation_faithfulness": {
+          "n": 100,
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        },
+        "hard_constraint_satisfaction_rate": {
+          "n": 100,
+          "mean": 0.75,
+          "ci_low": 0.66,
+          "ci_high": 0.83
+        },
+        "hr_at_1": {
+          "n": 100,
+          "mean": 0.49,
+          "ci_low": 0.38,
+          "ci_high": 0.59
+        },
+        "hr_at_3": {
+          "n": 100,
+          "mean": 0.62,
+          "ci_low": 0.52,
+          "ci_high": 0.71
+        },
+        "hr_at_5": {
+          "n": 100,
+          "mean": 0.75,
+          "ci_low": 0.67,
+          "ci_high": 0.83
+        },
+        "mean_latency_ms": {
+          "n": 100,
+          "mean": 0.24115999999999999,
+          "ci_low": 0.22741975,
+          "ci_high": 0.25827250000000007
+        },
+        "mean_token_usage": {
+          "n": 100,
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "mean_tool_calls": {
+          "n": 100,
+          "mean": 5.0,
+          "ci_low": 5.0,
+          "ci_high": 5.0
+        },
+        "mean_turns": {
+          "n": 100,
+          "mean": 2.0,
+          "ci_low": 2.0,
+          "ci_high": 2.0
+        },
+        "memory_write_accuracy": {
+          "n": 100,
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        },
+        "ndcg_at_3": {
+          "n": 100,
+          "mean": 0.5628557852142875,
+          "ci_low": 0.4754684505321452,
+          "ci_high": 0.6539338223607153
+        },
+        "ndcg_at_5": {
+          "n": 100,
+          "mean": 0.6131466501547778,
+          "ci_low": 0.531768388699567,
+          "ci_high": 0.6955339848369202
+        },
+        "profile_contamination_rate": {
+          "n": 100,
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "recall_at_5": {
+          "n": 100,
+          "mean": 0.75,
+          "ci_low": 0.67,
+          "ci_high": 0.84
+        },
+        "recovery_success_rate": {
+          "n": 51,
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "redundant_tool_call_rate": {
+          "n": 100,
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "stale_memory_misuse_rate": {
+          "n": 100,
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "task_success_rate": {
+          "n": 100,
+          "mean": 0.49,
+          "ci_low": 0.38,
+          "ci_high": 0.58
+        }
+      },
+      "failure_counts": {
+        "failed_recovery": 26,
+        "hard_constraint_violation": 25,
+        "success": 49
+      },
+      "error_count": 0
+    }
+  },
+  "run_id": "agentrec_pilot-702072dfc94ec026-20260825T094146-2e6c2a",
+  "stage": "pilot",
+  "config_hash": "702072dfc94ec026",
+  "git_commit": "09facfe",
+  "code_hash": "74aa0137a3ef25c5",
+  "started_at": "2026-08-25T01:41:46.382654Z",
+  "finished_at": "2026-08-25T01:41:46.596763Z",
+  "raw_run_dir": "results/raw/pilot/agentrec_pilot-702072dfc94ec026-20260825T094146-2e6c2a",
+  "trajectories_file": "results/raw/pilot/agentrec_pilot-702072dfc94ec026-20260825T094146-2e6c2a/trajectories.jsonl"
+}

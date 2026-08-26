@@ -1,0 +1,46 @@
+experiment:
+  name: agentrec_llm_pilot
+  stage: llm_pilot
+  seed: 42
+  max_tasks: 100
+  output_dir: results/raw/llm_pilot
+  stop_on_error: true
+
+data:
+  source: controlled_catalog
+  controlled: true
+  scenarios:
+    - clear_single_turn
+    - needs_clarification
+    - preference_alignment
+    - preference_conflict
+    - recipient_shift
+    - hard_constraints
+    - rejection_recovery
+    - cold_start
+
+agent:
+  model: gpt-5.5
+  reasoning_effort: low
+  verbosity: low
+  max_output_tokens: 500
+  max_turns: 8
+  max_tool_calls: 12
+  max_model_turns: 12
+
+api:
+  provider: agentrec_gateway
+  base_url: ${AGENTREC_BASE_URL}
+  api_key_env: AGENTREC_API_KEY
+  insecure_http_ack_env: AGENTREC_ALLOW_INSECURE_HTTP
+  pricing_reference_model: gpt-5.5
+  max_cost_usd: ${AGENTREC_MAX_COST_USD}
+
+evaluation:
+  primary_metrics:
+    - task_success_rate
+    - hard_constraint_satisfaction_rate
+    - profile_contamination_rate
+    - recovery_success_rate
+  bootstrap_samples: 1000
+  confidence_level: 0.95

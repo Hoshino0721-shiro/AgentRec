@@ -1,0 +1,162 @@
+{
+  "n_records": 20,
+  "systems": {
+    "llm_full_agent": {
+      "n": 20,
+      "metrics": {
+        "explanation_faithfulness": {
+          "n": 20,
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        },
+        "hard_constraint_satisfaction_rate": {
+          "n": 20,
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        },
+        "hr_at_1": {
+          "n": 20,
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        },
+        "hr_at_3": {
+          "n": 20,
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        },
+        "hr_at_5": {
+          "n": 20,
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        },
+        "mean_latency_ms": {
+          "n": 20,
+          "mean": 29072.830550000002,
+          "ci_low": 25329.124348749996,
+          "ci_high": 33568.265532499994
+        },
+        "mean_token_usage": {
+          "n": 20,
+          "mean": 15293.45,
+          "ci_low": 12854.505000000001,
+          "ci_high": 18217.18
+        },
+        "mean_tool_calls": {
+          "n": 20,
+          "mean": 6.8,
+          "ci_low": 6.273750000000001,
+          "ci_high": 7.55
+        },
+        "mean_turns": {
+          "n": 20,
+          "mean": 2.35,
+          "ci_low": 2.15,
+          "ci_high": 2.576249999999999
+        },
+        "memory_write_accuracy": {
+          "n": 20,
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        },
+        "ndcg_at_3": {
+          "n": 20,
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        },
+        "ndcg_at_5": {
+          "n": 20,
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        },
+        "profile_contamination_rate": {
+          "n": 20,
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "recall_at_5": {
+          "n": 20,
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        },
+        "recovery_success_rate": {
+          "n": 3,
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        },
+        "redundant_tool_call_rate": {
+          "n": 20,
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "stale_memory_misuse_rate": {
+          "n": 20,
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "task_success_rate": {
+          "n": 20,
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        },
+        "useful_clarification_rate": {
+          "n": 4,
+          "mean": 0.5,
+          "ci_low": 0.0,
+          "ci_high": 1.0
+        }
+      },
+      "failure_counts": {
+        "success": 20
+      },
+      "error_count": 0
+    }
+  },
+  "run_id": "agentrec_llm_smoke-4f0e87a8fd0712bb-20260826T004907-d2f3bc",
+  "stage": "llm_smoke",
+  "config_hash": "4f0e87a8fd0712bb",
+  "git_commit": "09facfe",
+  "code_hash": "96b41e0fad6acc13",
+  "controlled": true,
+  "model": "gpt-5.5",
+  "provider": "agentrec_gateway",
+  "base_url": "<redacted-private-gateway>",
+  "provider_pricing_verified": false,
+  "cost_basis": "OpenAI public GPT-5.5 reference estimate; not an AgentRec gateway invoice",
+  "requested_tasks": 20,
+  "saved_records": 20,
+  "stop_reason": "completed",
+  "stop_error": null,
+  "budget_after": {
+    "model": "gpt-5.5",
+    "max_cost_usd": 9.9197125,
+    "charged_or_reserved_usd": 1.4928065,
+    "settled_cost_usd": 1.426294,
+    "remaining_usd": 8.426906,
+    "event_count": 152
+  },
+  "overall_budget_after": {
+    "max_cost_usd": 10.0,
+    "charged_or_reserved_usd": 1.573094,
+    "remaining_usd": 8.426906,
+    "prior_model_charged_or_reserved_usd": 0.0802875,
+    "current_model": "gpt-5.5"
+  },
+  "started_at": "2026-08-25T16:49:07.035970Z",
+  "finished_at": "2026-08-25T16:58:48.566135Z",
+  "raw_run_dir": "results/raw/llm_smoke/agentrec_llm_smoke-4f0e87a8fd0712bb-20260826T004907-d2f3bc",
+  "trajectories_file": "results/raw/llm_smoke/agentrec_llm_smoke-4f0e87a8fd0712bb-20260826T004907-d2f3bc/trajectories.jsonl"
+}

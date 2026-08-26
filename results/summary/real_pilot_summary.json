@@ -1,0 +1,321 @@
+{
+  "n_records": 400,
+  "systems": {
+    "candidate_order": {
+      "n": 100,
+      "metrics": {
+        "hr_at_1": {
+          "n": 100,
+          "mean": 0.02,
+          "ci_low": 0.0,
+          "ci_high": 0.05
+        },
+        "hr_at_3": {
+          "n": 100,
+          "mean": 0.15,
+          "ci_low": 0.08,
+          "ci_high": 0.22
+        },
+        "hr_at_5": {
+          "n": 100,
+          "mean": 0.24,
+          "ci_low": 0.15,
+          "ci_high": 0.33
+        },
+        "mean_latency_ms": {
+          "n": 100,
+          "mean": 0.08190000000000001,
+          "ci_low": 0.07408975,
+          "ci_high": 0.09157275000000001
+        },
+        "mean_token_usage": {
+          "n": 100,
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "mean_tool_calls": {
+          "n": 100,
+          "mean": 3.0,
+          "ci_low": 3.0,
+          "ci_high": 3.0
+        },
+        "mean_turns": {
+          "n": 100,
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        },
+        "ndcg_at_3": {
+          "n": 100,
+          "mean": 0.09547438028571661,
+          "ci_low": 0.05259179238660778,
+          "ci_high": 0.1420476706491109
+        },
+        "ndcg_at_5": {
+          "n": 100,
+          "mean": 0.13204408297037942,
+          "ci_low": 0.08661366564154992,
+          "ci_high": 0.18385265823249028
+        },
+        "recall_at_5": {
+          "n": 100,
+          "mean": 0.24,
+          "ci_low": 0.15,
+          "ci_high": 0.33
+        },
+        "task_success_rate": {
+          "n": 100,
+          "mean": 0.02,
+          "ci_low": 0.0,
+          "ci_high": 0.05
+        }
+      },
+      "failure_counts": {
+        "irrelevant_or_unaccepted_recommendation": 98,
+        "success": 2
+      },
+      "error_count": 0
+    },
+    "full_history_lexical": {
+      "n": 100,
+      "metrics": {
+        "hr_at_1": {
+          "n": 100,
+          "mean": 0.47,
+          "ci_low": 0.37,
+          "ci_high": 0.57
+        },
+        "hr_at_3": {
+          "n": 100,
+          "mean": 0.63,
+          "ci_low": 0.53,
+          "ci_high": 0.72
+        },
+        "hr_at_5": {
+          "n": 100,
+          "mean": 0.73,
+          "ci_low": 0.63,
+          "ci_high": 0.81
+        },
+        "mean_latency_ms": {
+          "n": 100,
+          "mean": 2.8323899999999997,
+          "ci_low": 2.6010780000000007,
+          "ci_high": 3.1180632499999996
+        },
+        "mean_token_usage": {
+          "n": 100,
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "mean_tool_calls": {
+          "n": 100,
+          "mean": 3.0,
+          "ci_low": 3.0,
+          "ci_high": 3.0
+        },
+        "mean_turns": {
+          "n": 100,
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        },
+        "ndcg_at_3": {
+          "n": 100,
+          "mean": 0.5644022728928604,
+          "ci_low": 0.4754207749160739,
+          "ci_high": 0.6546662657205401
+        },
+        "ndcg_at_5": {
+          "n": 100,
+          "mean": 0.6048405036498685,
+          "ci_low": 0.5296299148650786,
+          "ci_high": 0.6868072091531092
+        },
+        "recall_at_5": {
+          "n": 100,
+          "mean": 0.73,
+          "ci_low": 0.63,
+          "ci_high": 0.82
+        },
+        "task_success_rate": {
+          "n": 100,
+          "mean": 0.47,
+          "ci_low": 0.38,
+          "ci_high": 0.57
+        }
+      },
+      "failure_counts": {
+        "irrelevant_or_unaccepted_recommendation": 53,
+        "success": 47
+      },
+      "error_count": 0
+    },
+    "popularity": {
+      "n": 100,
+      "metrics": {
+        "hr_at_1": {
+          "n": 100,
+          "mean": 0.24,
+          "ci_low": 0.16,
+          "ci_high": 0.33
+        },
+        "hr_at_3": {
+          "n": 100,
+          "mean": 0.37,
+          "ci_low": 0.27,
+          "ci_high": 0.46
+        },
+        "hr_at_5": {
+          "n": 100,
+          "mean": 0.46,
+          "ci_low": 0.35,
+          "ci_high": 0.56
+        },
+        "mean_latency_ms": {
+          "n": 100,
+          "mean": 0.07838,
+          "ci_low": 0.07374825000000006,
+          "ci_high": 0.08313025000000003
+        },
+        "mean_token_usage": {
+          "n": 100,
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "mean_tool_calls": {
+          "n": 100,
+          "mean": 3.0,
+          "ci_low": 3.0,
+          "ci_high": 3.0
+        },
+        "mean_turns": {
+          "n": 100,
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        },
+        "ndcg_at_3": {
+          "n": 100,
+          "mean": 0.31809297535714576,
+          "ci_low": 0.2380870456035743,
+          "ci_high": 0.4041710125035735
+        },
+        "ndcg_at_5": {
+          "n": 100,
+          "mean": 0.3555391530585856,
+          "ci_low": 0.2760537827522395,
+          "ci_high": 0.4367695417475363
+        },
+        "recall_at_5": {
+          "n": 100,
+          "mean": 0.46,
+          "ci_low": 0.35975000000000024,
+          "ci_high": 0.56
+        },
+        "task_success_rate": {
+          "n": 100,
+          "mean": 0.24,
+          "ci_low": 0.16,
+          "ci_high": 0.33
+        }
+      },
+      "failure_counts": {
+        "irrelevant_or_unaccepted_recommendation": 76,
+        "success": 24
+      },
+      "error_count": 0
+    },
+    "short_term_recency": {
+      "n": 100,
+      "metrics": {
+        "hr_at_1": {
+          "n": 100,
+          "mean": 0.45,
+          "ci_low": 0.35,
+          "ci_high": 0.55
+        },
+        "hr_at_3": {
+          "n": 100,
+          "mean": 0.67,
+          "ci_low": 0.57,
+          "ci_high": 0.76
+        },
+        "hr_at_5": {
+          "n": 100,
+          "mean": 0.79,
+          "ci_low": 0.7,
+          "ci_high": 0.87
+        },
+        "mean_latency_ms": {
+          "n": 100,
+          "mean": 2.4467700000000003,
+          "ci_low": 2.348345250000001,
+          "ci_high": 2.543615749999999
+        },
+        "mean_token_usage": {
+          "n": 100,
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "mean_tool_calls": {
+          "n": 100,
+          "mean": 3.0,
+          "ci_low": 3.0,
+          "ci_high": 3.0
+        },
+        "mean_turns": {
+          "n": 100,
+          "mean": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        },
+        "ndcg_at_3": {
+          "n": 100,
+          "mean": 0.5796394630357187,
+          "ci_low": 0.48987072342500554,
+          "ci_high": 0.6662068236455414
+        },
+        "ndcg_at_5": {
+          "n": 100,
+          "mean": 0.6282529874458062,
+          "ci_low": 0.5592563600589184,
+          "ci_high": 0.7054056177731685
+        },
+        "recall_at_5": {
+          "n": 100,
+          "mean": 0.79,
+          "ci_low": 0.7,
+          "ci_high": 0.87
+        },
+        "task_success_rate": {
+          "n": 100,
+          "mean": 0.45,
+          "ci_low": 0.36,
+          "ci_high": 0.55
+        }
+      },
+      "failure_counts": {
+        "irrelevant_or_unaccepted_recommendation": 55,
+        "success": 45
+      },
+      "error_count": 0
+    }
+  },
+  "run_id": "agentrecbench_real_pilot-5e06aafcc42bea27-20260825T092126-4630a1",
+  "stage": "real_pilot",
+  "config_hash": "5e06aafcc42bea27",
+  "git_commit": "09facfe",
+  "code_hash": "f929fcd8d0d6ccdf",
+  "controlled": false,
+  "data_type": "real_log",
+  "started_at": "2026-08-25T01:21:26.342841Z",
+  "finished_at": "2026-08-25T01:21:27.112848Z",
+  "metric_boundary": "Interactive hard-constraint, contamination, clarification, and recovery metrics are not applicable to this static benchmark.",
+  "raw_run_dir": "results/raw/real_pilot/agentrecbench_real_pilot-5e06aafcc42bea27-20260825T092126-4630a1",
+  "trajectories_file": "results/raw/real_pilot/agentrecbench_real_pilot-5e06aafcc42bea27-20260825T092126-4630a1/trajectories.jsonl"
+}
