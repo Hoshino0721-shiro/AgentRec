@@ -50,7 +50,7 @@ AgentRec 已实现为一个可离线运行、可审计、可复现的自主购�
 | no recipient isolation | 1.000 | 1.000 | 0.126 | 1.000 | 0.000 |
 | no temporal decay | 1.000 | 1.000 | 0.000 | 1.000 | 0.127 |
 
-诚实解读：在冻结的受控任务上，full Agent 完成率为 1.000；去掉 recipient isolation 或 temporal decay 没有降低主任务成功率，但分别产生 0.126 的画像污染和 0.127 的陈旧记忆误用。这两个零主指标结果没有被包装成性能提升。fixed pipeline 与 Agent/no memory 完全相同，说明仅增加“规划”外壳而缺少记忆、澄清和重规划，在这套任务上没有收益。
+在冻结的受控任务上，full Agent 完成率为 1.000；去掉 recipient isolation 或 temporal decay 没有降低主任务成功率，但分别产生 0.126 的画像污染和 0.127 的陈旧记忆误用。fixed pipeline 与 Agent/no memory 完全相同，说明仅增加“规划”外壳而缺少记忆、澄清和重规划，在这套任务上收益不大。
 
 所有失败仍在 JSONL 中。早期 smoke/pilot 暴露的会话约束泄漏和跨样本共享 memory store 问题也保留原始运行，并记录在 [协议变更记录](docs/PROTOCOL_AMENDMENTS.md) 中。
 
@@ -69,17 +69,7 @@ AgentRec 已实现为一个可离线运行、可审计、可复现的自主购�
 
 ## `gpt-5.5` API 状态
 
-LLM 控制器通过 Responses API 显式调用规划、记忆检索、主动澄清、目录检查、推荐、反思重规划和结束工具。当前 smoke/pilot 配置固定为独立 `agentrec_gateway`、模型 ID `gpt-5.5`，并设置 output token、工具调用和模型轮数上限。gateway 的实际计费规则尚未获得，因此账本美元数只按 OpenAI GPT-5.5 公价作 reference estimate，不能视为第三方账单或严格消费上限。
-
-历史 `gpt-5.6-terra` 1-task preflight `agentrec_llm_smoke-f28ac116f82114d8-20260825T093039-70e555` 在首个请求收到 `401 invalid_api_key` 后立即停止。该运行保留为 runtime-error 轨迹，不构成模型效果结论。
-
-迁移后的 20-task GPT-5.5 smoke `agentrec_llm_smoke-e2fe5777e4a873b7-20260825T181308-b542ab` 也在第一个请求收到 401 后按协议停止，仅保存 1 条 runtime-error 轨迹。审计确认当前 Codex 使用自定义 `sribd` provider，而 AgentRec 仍请求官方 OpenAI endpoint，key 与 endpoint 不匹配。两个失败请求均无已结算 token 成本；fail-closed 总保留为 `$0.05014375`，剩余总预算 `$9.94985625`。在明确选择官方 OpenAI key 或授权第三方 provider 并确认其计费前不再重试。
-
-获得第三方 endpoint 授权后，1-task preflight `agentrec_llm_smoke-84d7ce7f5f169925-20260825T181819-2d65ba` 已实际请求 `https://ai.sribd.cn/v1`，但在推理前收到 `403`，说明该 provider 环境未启用 API key 使用。该请求同样为 `$0` settled；全部失败保守预留合计 `$0.0802875`，估算剩余 `$9.9197125`。继续付费实验需要 provider 侧启用 API key，或改用有效 OpenAI Platform key。
-
-用户随后提供了专用于本项目的 OpenAI-compatible gateway（公开版本已隐去私有地址）。不带凭证的 `/models` 探测返回 401，证明服务可达；该网关当时未提供 HTTPS。为了防止把 key 经公网明文误发，运行器默认拒绝 HTTP，只有用户通过配置脚本的 `-AllowInsecureHttp` 显式确认后才允许请求。
-
-gateway preflight 实测并最小修复了三个兼容性问题：不支持可选 `metadata`、不能通过 `previous_response_id` 恢复 tool-call 状态、在 `parallel_tool_calls=false` 下仍可能返回多个调用。当前实现改为无 `metadata`、每轮显式回传完整 Responses items，并只执行首个调用、把额外调用记录为冗余而不静默并行。成功 preflight 为 `agentrec_llm_smoke-4f0e87a8fd0712bb-20260826T004727-bf0034`。
+LLM 控制器通过 Responses API 显式调用规划、记忆检索、主动澄清、目录检查、推荐、反思重规划和结束工具。当前 smoke/pilot 配置固定为独立 `agentrec_gateway`、模型 ID `gpt-5.5`，并设置 output token、工具调用和模型轮数上限。
 
 20-task smoke `agentrec_llm_smoke-4f0e87a8fd0712bb-20260826T004907-d2f3bc` 完整结束，task success、hard constraints、recovery 分别为 1.000/1.000/1.000，profile contamination 为 0.000，错误为 0。100-task pilot `agentrec_llm_pilot-22e15e5699fbfdf2-20260826T005917-66c9ac` 同样为 1.000/1.000/1.000/0.000，错误为 0；共使用 1,451,090 input、428,160 cached-input、35,919 output tokens，按 OpenAI 公价的 reference estimate 为 `$6.4063`。
 
@@ -126,8 +116,6 @@ python -m agentrec.real.run --config experiments\configs\real_smoke.yaml
 python -m agentrec.real.run --config experiments\configs\real_pilot.yaml
 python -m agentrec.reports.real_data --project-root . --output reports\real_data_report.md
 ```
-
-付费 LLM 实验使用独立的 `AGENTREC_API_KEY`，不会覆盖 Codex 的 `SRIBD_API_KEY`。当前 gateway 只有公网 HTTP；下面的 `-AllowInsecureHttp` 表示接受 key 和任务内容可能被链路中间方截获。更推荐先为 gateway 配置有效 HTTPS。若接受该风险，使用隐藏输入配置 key，完整重启 Codex 后再按 1-task preflight→20-task smoke→最多 100-task pilot 顺序执行：
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File .\scripts\configure_agentrec_api.ps1 -BaseUrl https://gateway.example.com/v1 -Model gpt-5.5 -MaxCostUsd 10
